@@ -1,0 +1,86 @@
+.iconGithub {
+  animation: 750ms ease-in-out iconsIn;
+}
+.iconDiscord {
+  animation: 700ms ease-in-out iconsIn;
+}
+.iconLinkedIn {
+  animation: 650ms ease-in-out iconsIn;
+}
+.iconMail {
+  animation: 600ms ease-in-out iconsIn;
+}
+.iconClip svg {
+  animation: 200ms ease-in-out iconCopyIn;
+  stroke: var(--font-header-green);
+}
+.iconGithub svg:hover {
+  stroke: var(--font-header-green);
+}
+.iconDiscord svg:hover {
+  fill: var(--font-header-green);
+}
+.iconLinkedIn svg:hover {
+  stroke: var(--font-header-green);
+}
+.iconMail svg:hover {
+  stroke: var(--font-header-green);
+}
+.iconsWrapperOuter {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 5%;
+  right: auto;
+  animation: 500ms ease-in-out iconsIn;
+}
+.iconsWrapperInner {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.iconsWrapperInner svg {
+  margin: 15px 0px;
+  transition: all 250ms;
+}
+.iconsWrapperInner svg:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+.verticalLine {
+  width: 1px;
+  height: 80px;
+  margin: 20px 0 0;
+  background-color: white;
+}
+@keyframes iconsIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes iconIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes iconCopyIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,196 @@
+.wrapper {
+  width: 65%;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: opacity, transform;
+  transition-duration: 1200ms;
+  transition-timing-function: ease-in-out;
+}
+.header {
+  font-size: 2rem;
+  height: 100px;
+  width: 65%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  transition-property: opacity, transform;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in-out;
+}
+.containerMain {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerProject {
+  width: 25%;
+  height: 95%;
+  background-color: var(--background-projects-navbg);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+}
+.containerInfo {
+  width: 75%;
+  height: 100%;
+  background-color: var(--background-projects-body);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.projectWrapper {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 0 15px 0px;
+  transition: 400ms;
+  /* "to left" / "to right" - affects initial color */
+  background: linear-gradient(
+      to left,
+      var(--background-projects-navbg) 50%,
+      var(--background-projects-selected) 50%
+    )
+    right;
+  background-size: 200%;
+}
+@keyframes projectSelect {
+  0% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+.projectWrapper.selected {
+  color: var(--font-header-green);
+  background-position: left;
+  animation: projectSelect 200ms ease-in-out;
+  box-shadow: 5px 3px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.projectWrapper:hover {
+  cursor: pointer;
+  color: var(--font-header-green);
+}
+.projectTitle {
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+.border {
+  height: 100%;
+  width: 5px;
+  margin-right: 15px;
+}
+.border.selected {
+  background-color: var(--font-header-green);
+  animation: borderSelect 300ms ease-in-out;
+  align-self: flex-start;
+}
+
+@keyframes borderSelect {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .wrapper {
+    height: 900px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .wrapper {
+    width: 80%;
+  }
+  .header {
+    width: 80%;
+  }
+  .projectTitle {
+    font-weight: 300;
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    width: 80%;
+    height: 800px;
+  }
+  .header {
+    width: 80%;
+    height: 100px;
+    margin: 0 0 30px;
+  }
+  .containerMain {
+    flex-direction: column;
+    height: 100%;
+  }
+  .containerInfo {
+    width: 100%;
+  }
+  .containerProject {
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    height: 60px;
+  }
+  .projectWrapper {
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+  }
+  .border {
+    height: 5px;
+    width: 100%;
+  }
+  .projectTitle {
+    margin: auto;
+    font-size: 1rem;
+  }
+  .border.selected {
+    background-color: var(--font-header-green);
+    animation: borderSelectMobile 300ms ease-in-out;
+    align-self: flex-start;
+  }
+  @keyframes borderSelectMobile {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .wrapper {
+    height: 650px;
+    max-height: 650px;
+    width: 90%;
+  }
+  .projectTitle {
+    margin: auto;
+    font-size: 0.65rem;
+  }
+  .containerProject {
+    height: 50px;
+  }
+  .projectWrapper {
+    height: 50px;
+  }
+  .header {
+    font-size: 1.7rem;
+    width: 90%;
+    height: 75px;
+  }
+}

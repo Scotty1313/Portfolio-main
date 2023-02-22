@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 75px;
+  margin: auto 0px 0px;
+  transition-property: opacity, transform;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-in-out;
+}
+.iconsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 70px;
+}
+.iconsWrapper svg {
+  margin: 0px 15px;
+  transition: all 250ms ease-in-out;
+}
+.text {
+  font-size: 0.8rem;
+}
+@media only screen and (max-width: 576px) {
+  .iconsWrapper svg {
+    height: 20;
+    width: 20;
+  }
+  .container {
+    height: 60px;
+    margin: auto 0px 5px;
+  }
+  .text {
+    font-size: 0.65rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .iconGithub svg:hover {
+    stroke: var(--font-header-green);
+  }
+  .iconDiscord svg:hover {
+    fill: var(--font-header-green);
+  }
+  .iconLinkedIn svg:hover {
+    stroke: var(--font-header-green);
+  }
+  .iconMail svg:hover {
+    stroke: var(--font-header-green);
+  }
+  .iconsWrapper svg:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+  }
+} ;

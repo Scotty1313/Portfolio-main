@@ -1,0 +1,34 @@
+.wrapper {
+  height: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 250ms;
+  z-index: 1;
+}
+
+.wrapper svg {
+  stroke: var(--font-header-green);
+  margin: 0 10px 0 0;
+  transition: 250ms;
+}
+
+.wrapper:hover {
+  cursor: default;
+  color: var(--font-header-green);
+}
+.wrapper:hover svg {
+  cursor: default;
+  transform: translateX(1.5px);
+}
+.text {
+  font-weight: 100;
+}
+@media only screen and (max-width: 576px) {
+  .wrapper:hover {
+    color: inherit;
+  }
+  .wrapper:hover svg {
+    transform: none;
+  }
+}
