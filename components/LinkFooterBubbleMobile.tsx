@@ -20,7 +20,7 @@ function LinkFooterBubbleMobile({
   handleStopClick,
 }: LinkFooterBubbleMobileProps) {
   const [isShowingControls, setIsShowingControls] = useState<boolean>(false);
-  const [animation, setAnimation] = useState<string>('');
+  const [animation] = useState<string>('');
 
   const handleShowControls = () => {
     setIsShowingControls(true);
