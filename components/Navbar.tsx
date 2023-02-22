@@ -58,7 +58,7 @@ function Navbar({
             <div className={styles.resumeWrapper}>
               <a
                 className={styles.resumeText}
-                href="https://drive.google.com/file/d/1lpmy8RF3kpTp0BewTL5CaUWbuPQ9jetK/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Gcg1A3N3fTOK2jxAwNny6QmmA1NHVun7/view?usp=sharing"
                 target="_blank"
               >
                 {navItemLeft}
@@ -94,7 +94,7 @@ function Navbar({
       <div className={styles.resumeWrapper}>
         <a
           className={styles.resumeText}
-          href="https://drive.google.com/file/d/1lpmy8RF3kpTp0BewTL5CaUWbuPQ9jetK/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Gcg1A3N3fTOK2jxAwNny6QmmA1NHVun7/view?usp=sharing"
           target="_blank"
         >
           {navItemLeft}
