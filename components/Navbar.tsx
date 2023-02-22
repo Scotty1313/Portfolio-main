@@ -9,7 +9,7 @@ interface NavbarProps {
     itemThree: string;
   };
   isMobile: boolean;
-  executeScroll(string): any;
+  executeScroll: any;
 }
 
 function Navbar({
