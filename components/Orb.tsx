@@ -19,7 +19,7 @@ interface OrbProps {
   isMobile: boolean;
 }
 
-function Orb({ id, isFading, isUser, scroll, isMobile }: OrbProps) {
+function Orb({ isFading, isUser, scroll, isMobile }: OrbProps) {
   const [orbPosX, setOrbPosX] = useState<number>(0);
   const [orbPosY, setOrbPosY] = useState<number>(0);
   const [orbSize, setOrbSize] = useState<number>(0);
