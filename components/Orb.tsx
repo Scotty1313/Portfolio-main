@@ -12,8 +12,8 @@ const orbColors = [
 ];
 
 interface OrbProps {
-  id: string;
   isFading: boolean;
+  id: string;
   isUser: boolean;
   scroll: number;
   isMobile: boolean;
