@@ -1,6 +1,6 @@
 import styles from '../styles/AboutMe.module.css';
 import Image from 'next/image';
-import headshot from '../public/projects/headshot_portfolio.jpg';
+import headshot from '../public/headshot_portfolio.jpg';
 import SkillsList from '../components/SkillsList';
 
 interface AboutProps {
