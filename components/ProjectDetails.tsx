@@ -1,7 +1,6 @@
 import styles from '../styles/ProjectDetails.module.css';
 import ProjectSkill from './ProjectSkill';
 import Image from 'next/image';
-import { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import GithubIcon from './icons/Github';
 import ExternalLink from './icons/ExternalLink';
